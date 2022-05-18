@@ -16,3 +16,4 @@ RUN unzip ${PACKER_DEST}/${PACKER_ZIPFILE} -d ${PACKER_DEST} && \
     rm -rf ${PACKER_DEST}/${PACKER_ZIPFILE}
 
 RUN apk add qemu qemu-img qemu-system-x86_64 qemu-ui-gtk
+RUN apk add libvirt-daemon qemu-img qemu-system-x86_64 qemu-modules openrc
